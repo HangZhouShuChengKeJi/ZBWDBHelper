@@ -1,0 +1,77 @@
+PODS:
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
+  - SQLCipher (4.0.1):
+    - SQLCipher/standard (= 4.0.1)
+  - SQLCipher/common (4.0.1)
+  - SQLCipher/standard (4.0.1):
+    - SQLCipher/common
+  - ZBWCategories (0.1.7):
+    - SDWebImage
+    - "ZBWCategories/NSFoundation+ZBWCategory (= 0.1.7)"
+    - "ZBWCategories/UIKit+ZBWCategory (= 0.1.7)"
+    - ZBWJson
+  - "ZBWCategories/NSFoundation+ZBWCategory (0.1.7)":
+    - SDWebImage
+    - "ZBWCategories/NSFoundation+ZBWCategory/NSObject+ZBWCategory (= 0.1.7)"
+    - ZBWJson
+  - "ZBWCategories/NSFoundation+ZBWCategory/NSObject+ZBWCategory (0.1.7)":
+    - SDWebImage
+    - ZBWJson
+  - "ZBWCategories/UIKit+ZBWCategory (0.1.7)":
+    - SDWebImage
+    - ZBWJson
+  - ZBWJson (0.0.7)
+
+DEPENDENCIES:
+  - FMDB/SQLCipher
+  - libwebp (= 0.6.1)
+  - ZBWCategories (~> 0.1.7)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FMDB
+    - libwebp
+    - SDWebImage
+    - SQLCipher
+    - ZBWCategories
+    - ZBWJson
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  SQLCipher: 4636a257060f6f1b4e143a143028b61a2b462d0d
+  ZBWCategories: 1b6c811d37cf02a4d83d36a4cc1913f87faf74fb
+  ZBWJson: ae7f2d44877ea347c48d6714bfc4704129adedd4
+
+PODFILE CHECKSUM: 04f3ae1ca78860557d729fa7296e4528e1e5ee64
+
+COCOAPODS: 1.8.3
