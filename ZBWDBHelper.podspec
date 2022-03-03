@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWDBHelper"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "FMDB 封装."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   ZBWDBHelper 封装了FMDB，方便DB操作。
+                   ZBWDBHelper 封装了FMDB，方便DB操作。使用ORM，自动生成表、自动升级表结构，不需要写sql就能方便查询、保存数据。
                    DESC
 
   s.homepage     = "https://github.com/HangZhouShuChengKeJi/ZBWDBHelper"
@@ -93,14 +93,10 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
-
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  # s.dependency 'ZBWCategories'
-  # s.dependency 'libwebp', '0.6.1'
-  s.dependency 'FMDB/SQLCipher'
-  # s.dependency 'Aspects', '~> 1.4.1'
+  s.dependency 'FMDB'
 
 end

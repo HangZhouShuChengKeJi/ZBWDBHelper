@@ -10,9 +10,10 @@ target 'ZBWDBHelper' do
   # use_frameworks!
 
   # Pods for ZBWDBHelper
-  	pod 'ZBWCategories', "~> 0.1.7"
-  	pod 'libwebp', '0.6.1'
-  	pod 'FMDB/SQLCipher'
+#  	pod 'ZBWCategories', "~> 0.1.7"
+#  	pod 'libwebp', '0.6.1'
+    pod 'FMDB'
+#  	pod 'FMDB/SQLCipher'
 #    pod 'Aspects', '~> 1.4.1'
 
 end
