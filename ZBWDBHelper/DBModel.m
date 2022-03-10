@@ -813,7 +813,7 @@ static void * DBModel_TableFieldTypeList;
             
             [fieldDic setObject:property forKey:property.fieldName];
             //
-            NSLog(@"%@", property.description);
+//            NSLog(@"%@", property.description);
         }
         free(propertyList);
         objc_setAssociatedObject(self, &DBModel_ModelProperyMap, propertyDic, OBJC_ASSOCIATION_RETAIN);
@@ -920,7 +920,7 @@ static void * DBModel_TableFieldTypeList;
 
     NSString *sql = [NSString stringWithFormat:@"INSERT %@ INTO %@(%@) VALUES(%@)", needReplace ? @"OR REPLACE" : @"", [self.class DB_tableName],[selectiveFields componentsJoinedByString:@","] ,[valueArr componentsJoinedByString:@","]];
 
-    NSLog(@"[%@  insertSQL] : %@", self, sql);
+//    NSLog(@"[%@  insertSQL] : %@", self, sql);
     return sql;
 }
 
@@ -1027,7 +1027,7 @@ static void * DBModel_TableFieldTypeList;
     
     str = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ (%@);", [self DB_tableName], str];
     
-    NSLog(@"[%@  creatTableSQL] : %@", self, str);
+//    NSLog(@"[%@  creatTableSQL] : %@", self, str);
     
     return str;
 }
@@ -1046,7 +1046,7 @@ static void * DBModel_TableFieldTypeList;
     
     NSString *sql = [NSString stringWithFormat:@"INSERT %@ INTO %@(%@) VALUES(%@)", needReplace ? @"OR REPLACE" : @"", [self DB_tableName],[[self DB_tableFieldList] componentsJoinedByString:@","] ,[valueArr componentsJoinedByString:@","]];
     
-    NSLog(@"[%@  insertSQL] : %@", self, sql);
+//    NSLog(@"[%@  insertSQL] : %@", self, sql);
     return sql;
 }
 
@@ -1063,7 +1063,7 @@ static void * DBModel_TableFieldTypeList;
     }
 
     NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET %@ where %@", [self DB_tableName], setStr, [self DB_sqlForArray:[self DB_primaryKeys]]];
-    NSLog(@"[%@  insertSQL] : %@", self, sql);
+//    NSLog(@"[%@  insertSQL] : %@", self, sql);
     return sql;
 }
 
