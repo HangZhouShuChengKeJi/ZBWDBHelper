@@ -759,7 +759,7 @@ static void * DBModel_TableFieldTypeList;
             return;
         }
         
-        NSArray *ignoreArr = [[self class] instancesRespondToSelector:@selector(DB_ignoreProperty)] ? [self DB_ignoreProperty] : nil;
+        NSArray *ignoreArr = [self respondsToSelector:@selector(DB_ignoreProperty)] ? [self DB_ignoreProperty] : nil;
         
         NSDictionary *orm = nil;
         if ([self respondsToSelector:@selector(DB_orm)]) {
